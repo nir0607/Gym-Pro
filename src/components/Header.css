@@ -1,0 +1,137 @@
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.contact {
+  margin: 0;
+}
+
+.content {
+  margin: 0;
+  flex: 1;
+  text-align: center; 
+}
+
+@media (min-width: 992px) {
+  .content {
+    margin-right: 10px; 
+     text-align: center; 
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-item .dropdown-menu {
+  display: none; 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  z-index: 1000; 
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block; 
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .content {
+    margin-left: 0;
+    margin-top: 5px; 
+    text-align: center; 
+  }
+
+  .navbar-nav {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .navbar-toggler {
+    margin-left: 0; 
+    width: 60px;
+    width: auto; 
+
+  }
+
+  .nav-item {
+    width: 100%; 
+    text-align: center; 
+  }
+
+  .nav-item .dropdown-menu {
+    position: static; 
+    width: 100%;
+  }
+}
+
+.contact-info i {
+  display: inline-block; 
+}
+
+ .fa-linkedin-square {
+  margin-right: 120px; 
+  cursor: pointer;
+}
+
+.fa-youtube{
+cursor: pointer;
+  margin-right: 10px;
+}
+.fa-instagram{
+  cursor: pointer;
+  margin-right: 10px;
+}
+.fa-twitter-square{
+  cursor: pointer;
+  margin-right: 10px;
+}
+.fa-facebook-square{
+  cursor: pointer;
+  margin-right: 10px;
+}
